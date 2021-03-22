@@ -8,11 +8,16 @@ public class Asignatura {
     int codigoExterno;
 
     Asignatura() {
-        this("Sin nombre");
-        this(0);
+        this.nombre = "Sin nombre";
+        this.codigoExterno = 0;
+        this.codigoExterno = 0;
     }
 
-    Asignatura(int codigoInterno) {
+    Asignatura(int codigoInterno, int codigoExterno) {
+    	/* Se le agregó un parámetro cualquiera. En el main solo
+    	se está llamando esta función con un parámetro que
+    	para asignar 882, que más adelante se imprime con código 
+    	Externo, por lo cual conviene modificar este*/
         this("Sin nombre", codigoInterno, 0);
     }
 
@@ -36,8 +41,11 @@ public class Asignatura {
         this.nombre = nombre;
     }
 
-    void cambiarDatos(int codigoInterno) {
+    void cambiarDatos(int codigoInterno, int codigoExterno) {
         this.codigoInterno = codigoInterno;
+        /* Se le agrega un parámetro cualquiera a este constructor
+         * con el objetivo de que se use directamente el que modifica
+         * al código Externo, ya que es lo que se pretende en el main. */
     }
 
     void cambiarDatos(int codigoExterno) {
