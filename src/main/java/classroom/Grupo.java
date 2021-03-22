@@ -22,7 +22,7 @@ public class Grupo {
     	this.asignatura = asignatura;
     	this.codigo = codigo;
     	this.horario = horario;
-        Persona[] personas = new Persona[cantidadEstudiantes];        
+        this.estudiantes = new Persona[cantidadEstudiantes];        
     }
 
     Grupo(Persona[] estudiantes, Persona profesor, Asignatura asignatura) {
